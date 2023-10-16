@@ -1,0 +1,32 @@
+{
+  "name": "task-management-system",
+  "version": "1.0.0",
+  "description": "A web-based Task Management System built with SQL (MySQL) and Node.js for efficient user task management. This project includes user registration, login, session management, and the ability to create, read, update, and delete tasks securely.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amit1github/task-management-system.git"
+  },
+  "keywords": [],
+  "author": "Amit Yadav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amit1github/task-management-system/issues"
+  },
+  "homepage": "https://github.com/amit1github/task-management-system#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.6.2",
+    "nodemon": "^3.0.1",
+    "validator": "^13.11.0"
+  }
+}
