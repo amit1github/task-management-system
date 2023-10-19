@@ -15,7 +15,10 @@ dotenv.config({ path: envPath });
 const routes = require("./routes/routes");
 
 // Connect to database
-connectDB();
+// connectDB();
+(async() => {
+  await connectDB()
+})
 
 const app = express();
 
@@ -35,10 +38,14 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 // Routes
-app.use("/api/v1", routes);
+// app.use("/api/v1", routes);
 
 // // errorHandler
 // app.use(errorHandler)
+
+// app.get("/create_db", (req, res) => {
+//   let sql = "CREATE DATABASE task"
+// })
 
 const PORT = process.env.PORT || 7000;
 const server = app.listen(PORT, () => {
